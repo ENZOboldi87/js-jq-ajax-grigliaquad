@@ -35,11 +35,13 @@ $(document).ready(function() {
         // se il numero e uguale o inferiore a 5 aggiungo classe 'giallo'
         if (numero <= 5) {
           $(quadratinoCliccato).addClass('giallo');
+          $(quadratinoCliccato).removeClass('verde');
 
         }
         else {
           // altrimenti aggiungo classe verde
           $(quadratinoCliccato).addClass('verde');
+          $(quadratinoCliccato).removeClass('giallo');
         }
         // vado ad aggiungere il numero al quadratino
         $(quadratinoCliccato).text(numero);
